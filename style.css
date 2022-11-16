@@ -19,9 +19,11 @@ body {
     padding: 0;
     line-height: 1;
 }
+
 ol, ul,li {
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: var(--cor-de-link);
@@ -39,10 +41,39 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+/* contenedor */
+.tudo{
+    padding: 0 2rem;
+}
+
 /*Sección Menu*/
 
 section.menu{
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+}
 
+.menu__header{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.menu__list{
+    display: flex;
+    align-items: stretch;
+    column-gap: 1.5rem;
+    padding: 0.9rem 0 0 0;
+}
+
+.menu__list__item{
+    font-size: 1.2rem;
+}
+
+.menu__list__item__contato{
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 /*Sección Title*/
