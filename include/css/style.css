@@ -1,5 +1,11 @@
 /* estilos */
 
+/* colores #f5f5f5 */
+:root{
+    --colfondo: #f5f5f5;
+    --colsepar: #eaf2fd;
+}
+
 /* principales */
 html{
   font-size: 16px;
@@ -7,11 +13,12 @@ html{
 
 body {
   box-sizing: border-box;
-  background-color: #f5f5f5;
+  background-color: var(--colfondo);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
+
 
 .cont{
    margin: 0 auto;
@@ -57,6 +64,7 @@ body {
 
 .title__bio{
     font-size: 3.3em;
+    padding: 1em 0;
 }
 
 .title__subsection{
@@ -76,9 +84,13 @@ body {
     color: #000000;
 }
 
+.title__profile{
+    border-radius: 50%;
+}
+
 /* sobre mi */
 .about{
-    background-color: #EAF2FD;
+    background-color: var(--colsepar);
     padding: 2em 0;
 }
 
@@ -146,7 +158,7 @@ body {
 
 /* formacion academica */
 .academic{
-    background-color: #eaf2fd;
+    background-color: var(--colsepar);
     padding: 5em 0;
 }
 
@@ -224,7 +236,7 @@ body {
 
 /* contacto */
 .formcontato{
-    background-color: #eaf2fd;
+    background-color: var(--colsepar);
     padding: 2em 0;
 }
 
@@ -253,13 +265,13 @@ body {
 }
 
 .formcontato__input{
-    border: 1px solid #eaf2fd;
+    border: 1px solid var(--colsepar);
     border-radius: 12px;
     padding: 1em;
 }
 
 .formcontato__textarea{
-    border: 1px solid #eaf2fd;
+    border: 1px solid var(--colsepar);
     border-radius: 12px;
     padding: 1em;
 }
@@ -267,6 +279,8 @@ body {
 .formcontato__botao{
     font-size: 1.2em;
     background-color: #2a7ae4;
+    border: 0px;
+    border-radius: 12px;
     color: #ffffff;
     padding: 1rem;
     width: 12em;
@@ -279,3 +293,5 @@ body {
     color: #464646;
     padding: 1em;
 }
+
+/* responsivo */
